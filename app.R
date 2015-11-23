@@ -5,7 +5,6 @@ library(leaflet)
 
 # Define UI for application that plots random distributions 
 ui<-fluidPage(
-  tags$head(includeScript("google.js")),
   br(),div(leafletOutput("Plot")),br(),"Refreshing in every 10 minute.",br(),"Free slots: Number of free slots",br(),"Free bikes: Number of bikes in the station",br(),br(),br(),
   img(src="http://harrywood.co.uk/maps/examples/leaflet/marker-icon-red.png")," less then 5 free bikes",br(),
   img(src="http://www.fosterly.com/assets/maps/marker-3a77f9ac6522a026170f1aed325f2d19.png")," less then 10 free bikes",br(),
